@@ -1,0 +1,61 @@
+/* 整体页面样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 主要内容区域样式 */
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content picture {
+    display: block;
+    margin: auto;
+    width: 70%; /* 设置图片宽度为 200px */
+    border-radius: 80px; /* 设置圆角为 8px */
+    overflow: hidden;
+}
+
+.content picture img {
+    width: 100%; /* 让图片宽度占父元素的 100%，以保持比例不变 */
+    height: auto; /* 高度自适应，保持图片比例 */
+    display: block; /* 确保图片为块级元素，以便 margin 生效 */
+}
+
+/* 右侧导航栏样式 */
+.vertical-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-nav ul li {
+    margin-bottom: 10px;
+}
+
+.vertical-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.vertical-nav ul li a:hover {
+    background-color: #ddd;
+}
