@@ -45,7 +45,7 @@ header {
   z-index: 1000;
   width: 100%;
   background-color: white;
-  padding: 10px 0 4px;
+  padding: 10px 0 10px;
   box-shadow: 0 14px 30px 1px rgba(0,0,0,0.04);
 }
 
@@ -64,10 +64,10 @@ header {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 126px;
   background-image: url("/img/aboutme/bg01.png");
   background-size:contain;
-  background-position-x: center;
+  background-position: center 126px;
   background-repeat: no-repeat;
 }
 
@@ -493,13 +493,15 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 20px;
   }
-
   nav {
     width: auto;
     float: right;
     margin-top: 70px;
   }
- 
+  main{
+    background-position: center top;
+    padding-top: 80px;
+  }
   /* 3D 卡片外容器 */ 
 .grid-container {
   display: grid;
