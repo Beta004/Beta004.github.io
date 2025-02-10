@@ -714,7 +714,7 @@ X-large devices (1440px or larger)
 .domaincard_container:hover #domaincard::before {
   transition: 200ms;
   content: '';
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .canvas {
