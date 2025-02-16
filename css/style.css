@@ -39,6 +39,21 @@ h4 {
   font-weight: 600;
 }
 
+/* 固定容器 */
+.fixed-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 滑动内容容器 */
+.scroll-container {
+  transition: transform 0.4s cubic-bezier(0.23,0.97,0.5,1);
+}
+
 /*header styling*/
 header {
   position: fixed;

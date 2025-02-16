@@ -29,3 +29,17 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+// 滑动阻尼逻辑
+document.addEventListener("DOMContentLoaded", function() {
+  const fixedContainer = document.querySelector('.fixed-container');
+  const scrollContainer = document.querySelector('.scroll-container');
+  
+  // 设置 body 高度以恢复滚动条
+  document.body.style.height = scrollContainer.scrollHeight + 'px';
+
+  // 监听滚动事件
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollContainer.style.transform = `translateY(-${scrollTop}px)`;
+  });
+});
