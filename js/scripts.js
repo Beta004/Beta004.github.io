@@ -30,7 +30,7 @@ function topFunction() {
 }
 
 // 滑动阻尼逻辑
-document.addEventListener("DOMContentLoaded", function() {
+window.addEventListener("load", function() {
   const fixedContainer = document.querySelector('.fixed-container');
   const scrollContainer = document.querySelector('.scroll-container');
   
