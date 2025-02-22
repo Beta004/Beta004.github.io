@@ -495,6 +495,27 @@ nav>ul>li>a {
   /* Add a dark-grey background on hover */
 }
 
+/* 视频容器样式 */
+.video-container {
+    position: relative;
+    /* 设置视频容器的宽度为 100%，使其自适应屏幕 */
+    width: 100%;
+    /* 设置视频容器的高度为 0，通过 padding-bottom 来保持视频的原始比例（16:9） */
+    height: 0;
+    /* 16:9 的比例 */
+    padding-bottom: 56.25%;
+    margin: 20px 0 56px 0;
+}
+
+/* 视频嵌入元素样式 */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /*media queries*/
 /* ==============================
 Medium devices (640px and larger)
@@ -558,27 +579,6 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-}
-
-/* 视频容器样式 */
-.video-container {
-    position: relative;
-    /* 设置视频容器的宽度为 100%，使其自适应屏幕 */
-    width: 100%;
-    /* 设置视频容器的高度为 0，通过 padding-bottom 来保持视频的原始比例（16:9） */
-    height: 0;
-    /* 16:9 的比例 */
-    padding-bottom: 56.25%;
-    margin: 20px 0 56px 0;
-}
-
-/* 视频嵌入元素样式 */
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 }
 
 /* ==============================
