@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能诊股图片展示</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* 媒体查询，针对电脑屏幕 */
+        @media (min-width: 768px) {
+            .image-container {
+                max-width: 360px; /* 可以根据需要调整最大宽度 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="智能诊股01.png" alt="智能诊股01">
+        <img src="智能诊股02.png" alt="智能诊股02">
+        <img src="智能诊股03.png" alt="智能诊股03">
+    </div>
+</body>
+
+</html>
