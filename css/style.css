@@ -1020,3 +1020,214 @@ X-large devices (1440px or larger)
    /* Non-prefixed version, currently
 									supported by Chrome, Edge, Opera and Firefox */
 }
+
+/* ===== Update banner (About page) ===== */
+.update-banner {
+  max-width: 680px;
+  margin: 40px auto 0;
+  padding: 28px 32px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #1a232c 0%, #2c3e50 100%);
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 8px 30px rgba(26, 35, 44, 0.25);
+}
+
+.update-banner .update-banner-tag {
+  display: inline-block;
+  background: #55aeff;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.update-banner h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.update-banner p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.update-banner code {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 13px;
+}
+
+/* ===== Changelog (About page) ===== */
+.changelog {
+  max-width: 680px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.changelog h2 {
+  text-align: center;
+}
+
+.changelog-list {
+  border-left: 3px solid #428dae;
+  padding-left: 28px;
+}
+
+.changelog-item {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.changelog-item:last-child {
+  margin-bottom: 0;
+}
+
+.changelog-item::before {
+  content: "";
+  position: absolute;
+  left: -36.5px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #55aeff;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #428dae;
+}
+
+.changelog-date {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #428dae;
+  text-transform: uppercase;
+}
+
+.changelog-body h4 {
+  margin: 4px 0 6px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #1a232c;
+}
+
+.changelog-body p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a5964;
+}
+
+.changelog-body code {
+  background: #eef4f8;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 13px;
+  color: #1a232c;
+}
+
+/* ===== Under-construction (designother.html placeholder) ===== */
+.construction {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 20px 60px;
+  text-align: center;
+}
+
+.construction-emoji {
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.construction h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.construction-tag {
+  display: inline-block;
+  background: #fff3cd;
+  border: 1px solid #ffe08a;
+  color: #8a6d1a;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.construction p.lead {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #4a5964;
+  max-width: 560px;
+  margin: 0 auto 40px;
+}
+
+.construction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.construction-card {
+  background: #f5f8fb;
+  border: 1px solid #e1eaf1;
+  border-radius: 16px;
+  padding: 28px 20px;
+}
+
+.construction-card .icon {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.construction-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #1a232c;
+}
+
+.construction-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #63727e;
+  margin: 0;
+}
+
+.construction-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.construction-actions .ghost-button {
+  display: inline-block;
+  border: 2px solid #55aeff;
+  color: #55aeff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.construction-actions .ghost-button:hover {
+  background: #55aeff;
+  color: #fff;
+}
